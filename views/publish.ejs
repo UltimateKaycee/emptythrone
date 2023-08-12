@@ -1,0 +1,47 @@
+
+<%- include('partials/header'); -%>
+
+<form class="form-signin w-100 m-auto main-form" action="/publish" method="post" accept="image/png, image/jpeg">
+  <div>
+  <img class="mb-4 kenapexvision-logo" src="images/kenapexvision-logo.jpg" alt="kenapexvision_logo" width="72" height="57">
+  </div>
+  <div class="mb-3 form-control-div">
+    <label for="post-title" class="form-label"><h3>Enter Post Title</h3></label>
+    <input type="text" name="post_title" class="form-control form-control-lg form-control-post-title" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+
+  <div class="mb-3 form-control-div">
+  <label for="post-image" class="form-label"><h3>Upload Post Image</h3></label>
+  <input type="file" name="post_image" class="w-100 m-auto form-control form-control-lg form-control-file" id="post-image">
+
+</div>
+
+
+  <div class="mb-3 form-control-div">
+  <label for="post-category" class="form-label"><h3>Choose a Category for your Post</h3></label>
+
+    <select name="post_category" class="form-select form-select-lg mb-3 form-control-category" aria-label=".form-select-lg example">
+      <option selected>Choose a Post Category</option>
+      <option class="cat" value="World">World</option>
+      <option class="cat" value="Technology">Technology</option>
+      <option class="cat" value="Design">Design</option>
+      <option class="cat" value="Culture">Culture</option>
+      <option class="cat" value="Business">Business</option>
+      <option class="cat" value="Politics">Politics</option>
+      <option class="cat" value="Opinion">Opinion</option>
+      <option class="cat" value="Health">Health</option>
+      <option class="cat" value="Travel">Travel</option>
+</select>
+  </div>
+
+  <div class="mb-3 form-control-div">
+    <label for="post-main" class="form-label"><h3>Type your Post below</h3></label>
+  <textarea class="form-control mb-3 form-control-lg form-control-main-post" name="main_post" aria-describedby="inputGroup-sizing-lg" rows="20" cols="20" aria-label="With textarea"></textarea>
+</div>
+
+  <button class="w-100 btn btn-lg btn-success" type="submit">Publish Post</button>
+
+</form>
+
+
+<%- include('partials/footer'); -%>

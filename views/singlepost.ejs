@@ -1,0 +1,114 @@
+<%- include("partials/singlepost_header"); -%>
+
+<main class="container">
+
+<!-- <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic"><%= repPostTitle1 %></h1>
+      <p class="lead my-3"><%= repPostBody1 %></p>
+      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+    </div>
+  </div> -->
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <!-- <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        From the Firehose
+      </h3> -->
+
+      <!-- THE 3 ARTICLE SECTIONS BEGIN UNDER HERE -->
+
+      <article class="blog-post border-top">
+
+        <h2 class="display-5 link-body-emphasis mb-1" id="demo"><%= postTitle6 %> Sample blog post</h2>
+        <strong class="d-inline-block mb-2 text-success-emphasis"><%= postCategory6 %></strong>
+        <p class="blog-post-meta"><%= lpostDate %> by <a href="#">Mark</a></p>
+
+        <img src="<%= postImage6 %>">
+        <p><%= postBody6 %></p>
+      </article>
+
+      <!-- THE 3 ARTICLE SECTIONS END ABOVE HERE (2 portions of it removed to test the delivery of this up here) -->
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">About EmptyThrone Blog</h4>
+          <p class="mb-0">A blog developed by one versatile IT Support Specialist, Writer and Tech-enthusiast, <a href="https://ultimatekaycee.github.io/ultimatekaycee/">@UltimateKaycee</a>, to share powerful inspirational messages, random thoughts on events, Technological tips, tricks and advices on a wide range of concepts.</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Recent posts</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Example blog post title</h6>
+                  <small class="text-body-secondary">January 15, 2023</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">This is another blog post title</h6>
+                  <small class="text-body-secondary">January 14, 2023</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                  <small class="text-body-secondary">January 13, 2023</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+            <li><a href="#">November 2020</a></li>
+            <li><a href="#">October 2020</a></li>
+            <li><a href="#">September 2020</a></li>
+            <li><a href="#">August 2020</a></li>
+            <li><a href="#">July 2020</a></li>
+            <li><a href="#">June 2020</a></li>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2020</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Look up the Developer</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/UltimateKaycee" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/UltimateKaycee" target="_blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/NobleKaycee/" target="_blank">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT'S HERE now -->
+  </div>
+
+</main>
+
+<%- include("partials/singlepost_footer"); -%>
